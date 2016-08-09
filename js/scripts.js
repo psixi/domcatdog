@@ -2,15 +2,11 @@ $(document).ready(function() {
   $("button#cat").click(function() {
   $("ul.cul").prepend("<li>Meow</li>");
   $("ul.dul").prepend("<li>Bark</li>");
-  $("img.catpic").removeClass("catpic");
+  $(this).next().toggleClass("catpic");
 });
   $("button#dog").click(function() {
     $("ul.dul").prepend("<li>Bark</li>");
     $("ul.cul").prepend("<li>Meow</li>");
-    $("img.dogpic").removeClass("dogpic");
+    $(this).next().toggleClass("dogpic");
   });
-  // $("button#clear").click(function() {
-  //   $('img').addClass("catpic, dogpic");
-  // });
-
 });
